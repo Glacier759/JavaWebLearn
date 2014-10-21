@@ -3,7 +3,6 @@ package com.glacier.function;
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;
-import java.util.List;
 
 /**
  * Created by glacier on 14-10-21.

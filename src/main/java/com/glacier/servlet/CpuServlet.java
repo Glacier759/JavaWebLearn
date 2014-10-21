@@ -1,6 +1,7 @@
 package com.glacier.servlet;
 
 import com.glacier.function.CpuFunction;
+import org.apache.commons.io.FileUtils;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -25,6 +26,7 @@ public class CpuServlet extends HttpServlet {
                          HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
+        CpuFunction obj = new CpuFunction();
         out.print(new CpuFunction().getCpuJSON());
     }
 }
