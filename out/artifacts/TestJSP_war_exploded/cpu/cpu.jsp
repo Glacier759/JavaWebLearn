@@ -185,7 +185,7 @@ function drawPie(div, printstr){
         $.ajax({
             //url: "http://127.0.0.1:8000/get_cpu",
             //url: ajaxurl,
-            url: "<%=request.getContextPath()%>/cpu/cpu.json",
+            url: "<%=request.getContextPath()%>/cpu.do",
             type: "GET",
             dataType: "JSON",
             success: function(data) {
